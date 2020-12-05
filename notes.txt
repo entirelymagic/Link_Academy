@@ -1,0 +1,41 @@
+Lists = *************************************
+
+.append('value') value to the end of the element
+.remove('value') - YOu can only remove the value of the element from the list
+.pop(2)  will remove the 3rd element from the sequence = can be assigned (x = list_.pop(2)
+.de;l list_[2]  remove the 3rd element from the sequence  = cannot be assigned
+.clear() remove all the elements from the list
+
+Examples:
+arr = [6,7,8]
+
+for i in range(len(arr)): # i will be the index
+    print(arr[i])
+
+for k,v in enumerate(arr): # k will be the index(key), v will be the value
+    print(v, "is on index", k)
+
+Slice = *************************************
+
+Can be applied a sequence:
+
+Examples:
+x = [0,1,2,3,4]
+Sliced Object = ['start', 'stop', 'step']  ## The 'stop' element is not included!!!
+
+y = x[1,3]  # [1, 2]
+
+Sorting = *************************************
+
+.sort() object must be iterable.
+ |  sort(self, /, *, key=None, reverse=False)
+ |      Sort the list in ascending order and return None.
+ |
+ |      The sort is in-place (i.e. the list itself is modified) and stable (i.e. the
+ |      order of two equal elements is maintained).
+ |
+ |      If a key function is given, apply it once to each list item and sort them,
+ |      ascending or descending, according to their function values.
+ |
+ |      The reverse flag can be set to sort in descending order.
+
