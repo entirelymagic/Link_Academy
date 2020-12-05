@@ -1,7 +1,11 @@
-num = int(input('Enter number? '))
-if(num<0):
-    print("Number is less than zero")
-elif(num>0):
-    print("Number is higher than zero")
-else:
-    print("Number is zero")
+def moreless():
+    number: int = int(input("Enter your number: "))
+    if number > 0:
+        print("Your number is positive!")
+    elif number < 0:
+        print("Your number is negative")
+    else:
+        print("Your number is 0")
+
+
+moreless()
