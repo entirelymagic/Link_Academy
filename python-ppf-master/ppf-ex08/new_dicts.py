@@ -21,13 +21,8 @@ for day, events in logins.items():
         user = event['username']
         if user not in user_logs:
             user_logs[user] = {}
-
-for user in user_logs:
-    for day, events in logins.items():
-        for event in events:
-            if user == event["username"]:
-                if day not in user_logs[user]:
-                    user_logs[user][day] = []
-                user_logs[user][day].append(event['time'])
+        if day not in user_logs[user]:
+            user_logs[user][day] = []
+        user_logs[user][day].append(event['time'])
 
 pprint(user_logs)
