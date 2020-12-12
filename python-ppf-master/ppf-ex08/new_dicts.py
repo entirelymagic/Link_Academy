@@ -1,3 +1,5 @@
+from pprint import pprint
+
 logins = {
     "2.12": [{"username": "james", "time": "20:18"}, {"username": "john", "time": "23:59"},
              {"username": "robert", "time": "11:08"}],
@@ -12,19 +14,20 @@ logins = {
              {"username": "michael", "time": "21:01"}, {"username": "john", "time": "07:51"}],
 }
 
-# Your code here
+user_logs = {}
 
-utilizatori = set()
-day_users = set()
+for day, events in logins.items():
+    for event in events:
+        user = event['username']
+        if user not in user_logs:
+            user_logs[user] = {}
 
+for user in user_logs:
+    for day, events in logins.items():
+        for event in events:
+            if user == event["username"]:
+                if day not in user_logs[user]:
+                    user_logs[user][day] = []
+                user_logs[user][day].append(event['time'])
 
-for i in logins:
-    day = logins[i]
-    if i == '6.12':
-        for l in range(len(day)):
-            day_users.add(day[l]['username'])
-        print(day_users.issubset(utilizatori))
-    else:
-        for l in range(len(day)):
-            utilizatori.add(day[l]['username'])
-print(utilizatori, day_users)
+pprint(user_logs)

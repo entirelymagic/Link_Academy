@@ -16,8 +16,8 @@ logins = {
 stats = {}
 for i in logins:
     day = logins[i]
-    for l in range(len(day)):
-        login = day[l]
+    for login_instance in range(len(day)):
+        login = day[login_instance]
         name = login['username']
         if name in stats:
             stats[name] += 1
@@ -25,5 +25,4 @@ for i in logins:
             stats[name] = 1
 
 print(stats)
-
 
