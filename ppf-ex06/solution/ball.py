@@ -1,4 +1,6 @@
-import os, time
+import keyboard
+import os
+import time
 
 h = 20
 w = 20
@@ -7,8 +9,8 @@ by = 2
 spdx = 1
 spdy = 1
 
-while True:
-    os.system("clear")
+while not keyboard.is_pressed('q'):
+    os.system("cls")
     bx += spdx
     by += spdy
     if bx <= 0 or bx >= w - 1:
