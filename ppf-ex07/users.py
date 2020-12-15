@@ -1,3 +1,3 @@
-blacklist = ["peter","john","sally"]
+blacklist = ["peter", "john", "sally"]
 users = []
-#Your code here
+# Your code here

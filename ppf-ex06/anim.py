@@ -1,3 +1,2 @@
-
-target  = 50
-#Your code here
+target = 50
+# Your code here

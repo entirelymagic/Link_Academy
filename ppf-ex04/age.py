@@ -1,5 +1,5 @@
-allowed_age     = 13
-#Your code here
+allowed_age = 13
+# Your code here
 age = input("Enter your age:")
 allowed = int(age) >= allowed_age
 

@@ -3,7 +3,7 @@ Forsaken by his people, he strode into the wasteland. He traveled far to the nor
 '''
 print("Set your appearance")
 z = input("Male or female (male/female)?")
-if z=="male":
+if z == "male":
     print("You choose male")
 else:
     print("You choose female")

@@ -1,8 +1,8 @@
-hero_name   = "Luke"
-health      = 150
-mana        = 40
-xp          = 200
-level       = 5  
+hero_name = "Luke"
+health = 150
+mana = 40
+xp = 200
+level = 5
 
 print("Hero stats: ")
 print("#########################")

@@ -6,7 +6,7 @@ d3 = {}
 
 for k in d1:
     if k in d2:
-        r = d1[k]+d2[k]
+        r = d1[k] + d2[k]
         print(f'value of r is: {r}')
         d3[k] = r
 

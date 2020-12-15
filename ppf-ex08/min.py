@@ -1,7 +1,7 @@
 sampleDict = {
-  'Physics': 82,
-  'Math': 65,
-  'history': 75
+    'Physics': 82,
+    'Math': 65,
+    'history': 75
 }
 
-#Your code here
+# Your code here

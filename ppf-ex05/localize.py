@@ -1,9 +1,9 @@
 lang = input('Enter language? ')
-if(lang=="en"):
+if (lang == "en"):
     print("Hello")
-elif(lang=="sr"):
+elif (lang == "sr"):
     print("Zdravo")
-elif(lang=="de"):
+elif (lang == "de"):
     print("Hallo")
 else:
-    print("Unrecognized language") 
+    print("Unrecognized language")

@@ -1,4 +1,4 @@
-blacklist = ["peter","john","sally"]
+blacklist = ["peter", "john", "sally"]
 users = []
 while True:
     newuser = input("Username: ")

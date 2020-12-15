@@ -1,8 +1,8 @@
-processor       = "Intel i7"
+processor = "Intel i7"
 processor_speed = 3.5
-ram_memory      = 8
-hd_size         = 2.5
-os_included     = True
+ram_memory = 8
+hd_size = 2.5
+os_included = True
 
 print("Computer configuration: ")
 print("#########################")

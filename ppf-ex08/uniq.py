@@ -17,7 +17,6 @@ logins = {
 utilizatori = set()
 day_users = set()
 
-
 for i in logins:
     day = logins[i]
     if i == '6.12':
