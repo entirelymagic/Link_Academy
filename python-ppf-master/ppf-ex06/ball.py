@@ -1,3 +1,0 @@
-h = 20
-w = 20
-#YOUR CODE HERE

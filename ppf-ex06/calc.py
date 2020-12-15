@@ -1,11 +1,11 @@
-total = 0
+sum = 0
 
 while True:
     userInput = input("Enter number: ")
     if userInput == "":
-        print("Total result:", total)
+        print("Total result:",sum)
     else:
         if userInput.isnumeric():
-            total += int(userInput)
+            sum+=int(userInput)
         else:
             print("Value is not numeric")

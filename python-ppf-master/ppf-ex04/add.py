@@ -1,7 +1,0 @@
-print("First number?")
-a = input()
-print("Second number?")
-b = input() 
-a = int(a)
-b = int(b) 
-print("Result is: ", a + b) 
