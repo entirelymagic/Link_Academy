@@ -1,6 +1,4 @@
-"https://github.com/cosmin91ro/python-ppf"
-
-from typing import Any
+"""https://github.com/cosmin91ro/python-ppf"""
 
 
 def greet(*string: str):
@@ -21,6 +19,11 @@ def f(*args):
     """The function takes a list as an parameter and return the values within it if passed as arguments"""
     print(args[0] + args[1])
 
+
+def my_F(f):
+    return f("Hello World")
+
+print(my_F(len))
 
 def g(**kwargs):
     """"""
