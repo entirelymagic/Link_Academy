@@ -1,4 +1,4 @@
-def calc(a,b,op):
+def calc(a, b, op):
     if op == "add":
         return a + b
     elif op == "sub":
@@ -8,6 +8,7 @@ def calc(a,b,op):
     elif op == "div":
         return a / b
     else:
-        return 0 
+        return 0
 
-print(calc(2,3,"mul"))
+
+print(calc(2, 3, "mul"))
