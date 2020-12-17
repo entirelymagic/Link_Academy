@@ -1,8 +1,8 @@
 sampleDict = {
-  "name": "Kelly",
-  "age":25,
-  "salary": 8000,
-  "city": "New york"
+    "name": "Kelly",
+    "age": 25,
+    "city": "New york",
+    "salary": 8000,
 }
 
 # Your code here

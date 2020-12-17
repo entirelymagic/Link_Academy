@@ -1,15 +1,15 @@
 dct = {
-    "en":{ 
-        "n1":"Enter first number: ",
-        "n2":"Enter second number: ",
-        "res":"Result is: ",
+    "en": {
+        "n1": "Enter first number: ",
+        "n2": "Enter second number: ",
+        "res": "Result is: ",
     },
-    "ro":{ 
-        "n1":"Introdu primul numar: ",
-        "n2":"Introdu al doilea numar: ",
-        "res":"Rezultatul este: "
+    "ro": {
+        "n1": "Introdu primul numar: ",
+        "n2": "Introdu al doilea numar: ",
+        "res": "Rezultatul este: "
     }
-} 
+}
 
 while True:
     lang = input("Enter language (" + ",".join(dct.keys()) + "): ")
@@ -21,7 +21,6 @@ while True:
 
 loc = dct[lang]
 
-n1 = int(input(loc["n1"]+": ")) 
-n2 = int(input(loc["n2"]+": "))
-print(loc["res"]+": ",n1+n2)
-
+n1 = int(input(loc["n1"] + ": "))
+n2 = int(input(loc["n2"] + ": "))
+print(loc["res"] + ": ", n1 + n2)
