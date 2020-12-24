@@ -1,0 +1,2 @@
+# namespaces are local variables.
+
