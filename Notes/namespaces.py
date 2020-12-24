@@ -11,8 +11,16 @@
         sys.path.append("/mydir/someotherdir")
 
     2. Adaugarea caii in variabila de sistem PYTHONPATH:
+        # in terminal
 
         set PYTHONPATH = %PYTHONPATH%;c:/mydir/someotherdir
+
+
+    Python standard library. ->
+    Python modules. ->
+
+    Python Package Index -> https://pypi.org/
+
 
 
 
