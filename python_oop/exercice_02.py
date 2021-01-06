@@ -22,7 +22,7 @@ class Point:
 
     def dist(self, second_point):
         """Returneaza distanta dintre punct si un alt punc"""
-        return sqrt((second_point.x - self.x)**2 + (second_point.y - self.y)**2)
+        return sqrt((second_point.x - self.x) ** 2 + (second_point.y - self.y) ** 2)
 
 
 point1 = Point(5, 7)
@@ -34,3 +34,6 @@ point1.show()
 point1.move(77, 29)
 
 point1.show()
+
+x = point1.dist(Point(22, 33))
+print(x)
