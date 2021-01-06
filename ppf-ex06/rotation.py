@@ -23,7 +23,7 @@ while True:
     pty = npty
 
     # Render
-    os.system("clear")
+    os.system("cls")
     for y in range(h):
         for x in range(w):
             ptdrawn = False
