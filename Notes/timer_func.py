@@ -25,5 +25,6 @@ def factorial_func(x):
     res = factorial(x)
     print(res)
 
+
 factorial_func(10000)
 

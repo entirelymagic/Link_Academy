@@ -1,0 +1,22 @@
+h1 {
+    color: forestgreen;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(15, 30, 31);
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-style: italic;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
