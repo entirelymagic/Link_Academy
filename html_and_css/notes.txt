@@ -1,0 +1,12 @@
+Radu Gasler - radu.gasler@gmail.com
+
+caniuse.com # Functionalitati HTML ce pot fi folosite in diverse browsere.
+
+    HTML - Hypertext Markup Language
+    Asocierea cu manuscrisele
+    Multidimensionalitate
+
+    CSS - Cascading Style Sheets
+
+
+
