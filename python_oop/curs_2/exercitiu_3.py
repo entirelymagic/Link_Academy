@@ -12,6 +12,14 @@ class Firma:
     def get_proft(self):
         return self.__profit
 
+    @classmethod
+    def set_new_TVA(cls, tva):
+        cls.__TVA = tva
+
+    @classmethod
+    def get_tva(cls):
+        return cls.__TVA
+
 
 lidl = Firma()
 google = Firma()
