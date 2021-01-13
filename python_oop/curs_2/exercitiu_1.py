@@ -8,7 +8,7 @@ class Masina:
         self.bani_cheltuiti = 0
         self.valoare_benzina = 0
 
-    def alimentare(self, cantitate, pret):
+    def __alimentare(self, cantitate, pret):
         if cantitate <= self.cap_rezervor-self.cantitate_benzina:
             self.cantitate_benzina += cantitate
             self.valoare_benzina = cantitate*pret
@@ -32,7 +32,7 @@ class Masina:
 
 
 mercedes = Masina("Eclass", 7)
-mercedes.alimentare(20)
+mercedes.__alimentare(20,5)
 
 print(mercedes.cantitate_benzina)
 

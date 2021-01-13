@@ -1,5 +1,10 @@
 Silviu Ojog
 
+Comportamentele provate pot fi "accesate" din exteriorul obiectului cu ajutorul unor metode publice.
+(getter si setter)
+
+_internal
+__private
 
 
 
