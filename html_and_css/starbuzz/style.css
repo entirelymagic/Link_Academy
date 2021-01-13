@@ -1,3 +1,7 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 h1 {
     color: forestgreen;
     text-align: center;
@@ -15,8 +19,6 @@ h4 {
 p {
     text-align: center;
     font-style: italic;
+    tex
 }
 
-body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
