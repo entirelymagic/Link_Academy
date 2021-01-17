@@ -1,4 +1,3 @@
-RIGHTC = "\N{RIGHTWARDS ARROW}"
-LEFTC = "\N{LEFTWARDS ARROW}"
-UPC = "\N{UPWARDS ARROW}"
-DOWNC = "\N{DOWNWARDS ARROW}"
+from datetime import datetime
+
+gregorian = datetime.strptime("1582/10/4, 00:01", "%Y/%m/%d, %I:%M")
