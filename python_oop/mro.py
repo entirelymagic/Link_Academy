@@ -1,3 +1,6 @@
+import functools
+
+
 class A:
     def process(self):
         print('A process()')
@@ -21,3 +24,4 @@ obj = D()
 obj.process()
 
 print(D.mro())
+
