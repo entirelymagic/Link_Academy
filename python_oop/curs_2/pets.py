@@ -43,3 +43,9 @@ my_cats = [Sally('Florica', 2), Simon('Petrica', 3), Negrut('Tommy', 5)]
 my_pets = Pets(my_cats)
 # 4 Output all of the cats walking using the my_pets instance
 my_pets.walk()
+
+print(dir(Pets))
+print(dir(my_cats))
+print(dir(my_pets))
+
+print(my_pets.animals.__len__())
