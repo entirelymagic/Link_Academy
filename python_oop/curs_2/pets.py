@@ -1,4 +1,4 @@
-class Pets():
+class Pets:
     animals = []
 
     def __init__(self, animals):
@@ -9,7 +9,7 @@ class Pets():
             print(animal.walk())
 
 
-class Cat():
+class Cat:
     is_lazy = True
 
     def __init__(self, name, age):
