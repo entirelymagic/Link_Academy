@@ -23,3 +23,9 @@ def adder(x, y):
 
 print(reduce(adder, my_numbers))
 print(reduce(adder, scores))
+
+a = [(0, 2), (5, 2), (9, 9), (10, -1)]
+
+a.sort(key=lambda x: x[1])
+
+print(a)
