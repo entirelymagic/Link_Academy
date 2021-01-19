@@ -20,9 +20,12 @@ class Firma:
     def get_tva(cls):
         return cls.__TVA
 
+    def run(self):
+        return self
+
 
 lidl = Firma()
 google = Firma()
 
-print(lidl.get_proft())
-
+print(google.run().run().run())
+# run method returns self( the object itself) so it can be used repeatedly as the object itself has the method run()
