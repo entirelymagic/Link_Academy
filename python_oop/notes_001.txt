@@ -11,8 +11,7 @@ is_instance()
 Variabile statice:
 
 Metode si variabile statice apartin doar de clasa si nu de un obiect.
-    Nu au nevoie de crearea unui obiect pentru a exista, ele exista la nive; de clasa.
+    Nu au nevoie de crearea unui obiect pentru a exista, ele exista la nivel de clasa.
 
 
 
-l,

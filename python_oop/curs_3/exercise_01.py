@@ -1,4 +1,4 @@
-class Library:
+class Library(object):
     """Class that contain a list of book objects and perform actions on them"""
 
     def __init__(self, name):
@@ -46,6 +46,31 @@ class Book:
         return self.name
 
 
+class Roman(Book):
+    def __init__(self, name, publish_date, nr_of_volumes):
+        super().__init__(name, publish_date)
+        self.nr_of_volumes = nr_of_volumes
+
+
+class ScientificPaper(Book):
+    def __init__(self, name, publish_date, published_paper):
+        super().__init__(name, publish_date)
+        self.published_paper = published_paper
+
+
+class Manuals(Book):
+    def __init__(self, name, publish_date, editors):
+        super().__init__(name, publish_date)
+        self.editors = editors
+
+
+baltagul = Roman('Baltagul', 1900, 1)
+death_to_earth = ScientificPaper('We are killing the earth', 2021, 'Science Magazine')
+manal_lb_romana = Manuals('Manualul limbii romane, clasa a VI-a', 1999, 'Editura Teora')
+
+
+
+
 biblia = Book('Biblia', 2021)
 libraria_Eminescu = Library('Libraria Mihai Eminescu')
 libraria_Eminescu.show_menu()
@@ -57,3 +82,21 @@ libraria_Eminescu.add_new_book(Book('Cartea1', 2020))
 print("-----------------")
 libraria_Eminescu.list_all_books()
 
+
+class Author:
+    def __init__(self, name):
+        self.name = name
+
+
+class MultipleAuthor(Author):
+    def __init__(self, *name):
+        super().__init__(name)
+
+    def __str__(self):
+        print(x for x in self.name)
+
+
+autori = MultipleAuthor('Cosmin', 'Vlad')
+
+print(autori.name)
+print(dir(autori))
