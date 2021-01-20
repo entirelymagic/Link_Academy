@@ -1,17 +1,15 @@
-
-
-
-
 class Firma:
-    
-    def __init__ (self):
-        self.__profit = 0 
-    # Profit - specific pt fiecare firma in parte
+
+    def __init__(self):
+        self.__profit = 0
+        # Profit - specific pt fiecare firma in parte
+
     def set_profit(self, value):
         if value > 0:
             self.__profit = value
         else:
-            self.__profit = 0    
+            self.__profit = 0
+
     def get_profit(self):
         return self.__profit
 
@@ -24,8 +22,7 @@ class Firma:
 
     @classmethod
     def get_TVA(cls):
-        return Firma.__TVA 
-
+        return Firma.__TVA
 
 
 kaufland = Firma()
@@ -39,12 +36,3 @@ print("Profit kaufland: " + str(kaufland.get_profit()))
 
 print("TVA lidl: " + str(lidl.get_TVA()))
 print("Profit lidl: " + str(lidl.get_profit()))
-
-
-
-
-
-
-
-
-
