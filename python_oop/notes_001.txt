@@ -15,3 +15,4 @@ Metode si variabile statice apartin doar de clasa si nu de un obiect.
 
 
 
+l,
