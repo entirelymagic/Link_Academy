@@ -10,7 +10,7 @@ class Player:
 
 
 class Lottery(Player):
-    """A class that have a name and """
+    """A class that have a name and a numbers list that should be 6 numbers long """
     __extracted_numbers = []
     __guessed_numbers = []
     _nr_of_winners = {
@@ -58,9 +58,11 @@ class Lottery(Player):
 
 alexandra = Lottery(name='Alexandra', numbers=[23, 27, 5, 9, 45, 42])
 elvis = Lottery(name='Elvis', numbers=[14, 35, 19, 31, 40, 42])
+dragos = Lottery(name='Dragos', numbers=[4, 23, 29, 22, 30, 33])
 bingo = False
 
 while not bingo:
     elvis.check_winner()
     alexandra.check_winner()
+    dragos.check_winner()
     print(Lottery._nr_of_winners)
