@@ -34,6 +34,7 @@ price{
 
 body {
     font-family: 'Roboto', 'Regular 400', sans-serif;
+    background-color: rgb(188, 218, 231);
 }
 a {
     text-decoration-line: unset;
@@ -44,11 +45,11 @@ a {
 
 a:visited{
     text-decoration-line: unset;
-    text-decoration-style:inherit;
-    text-decoration-color: inherit;
-    text-decoration: inherit;
+    text-decoration-style:forestgreen;
+    text-decoration-color: forestgreen;
+    text-decoration: none;
 }
 
 a:hover {
-    background-color: yellowgreen;
+    background-color: rgb(50, 195, 205);
 }

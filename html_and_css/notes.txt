@@ -13,6 +13,7 @@ caniuse.com # Functionalitati HTML ce pot fi folosite in diverse browsere.
 ### randomtextgenerator.com
 ### animatie CSS
 ### content delivery network - Optimizare Web
+### hexinvaders.com - to learn hexadecimal color schemes
 
 Tipuri de Fonturi (Family):
 
@@ -53,4 +54,21 @@ em - font de baza element parinte
 rem  font de baza website 
 
 
+Cum Functioneaza Culorile?
 
+RGB - :luminozitate 0-255 for web
+100% - alb 
+0% - negru *
+Culorile pot fi scrise in format hexadecimal sau RGB
+# Noantele de gri in format hexa pot fi realizate prin scrierea aceleeasi culori.
+# culori albastre - incredere
+
+
+Inline Elements  & Block Elements
+display: inline or block
+- modul de randare de layout
+
+<br> - line break - force a new line 
+
+Escape Characters (HTML entities):
+- They begin with "&" 
