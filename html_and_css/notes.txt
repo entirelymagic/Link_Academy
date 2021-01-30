@@ -1,4 +1,5 @@
 Radu Gasler - radu.gasler@gmail.com
+github.come/miezuit
 
 caniuse.com # Functionalitati HTML ce pot fi folosite in diverse browsere.
 
@@ -8,6 +9,48 @@ caniuse.com # Functionalitati HTML ce pot fi folosite in diverse browsere.
 
     CSS - Cascading Style Sheets
 
+### fonts.google.com
+### randomtextgenerator.com
+### animatie CSS
+### content delivery network - Optimizare Web
+
+Tipuri de Fonturi (Family):
+
+******Sans-serif Family (Used in digital)
+    - Verdana
+    - Arial Black
+    - TRebuchet MS 
+    - Arial 
+    - Geneva
+
+*******Serif Family (Format Analog - de scris pe ziar, este mai usor de citit) 
+    # Serif Family is the default value.
+    # Este folosit la site-uri de stiri - poate parea outdated 
+    - Times
+    - Times New Roman
+    - Georgiaa
+
+*******Cursive Family 
+    - Comic Sans 
+    - Apple Chancery # titluri sau logo 
+
+******* Fantasy Family 
+    - Last Ninja 
+    - Impact 
+
+******* Monospace Family 
+    # each letter have the space they occupy equal.
+    # Used in programmig(editors) - easy to read.
+    - Courier
+    - Courier New 
+    - Andale Mono 
 
 
-Tema - Culori font si asa mai departe.
+Pentru a fi trecute in CSS este folosita metoda de import de preluare.
+
+To make a Website Responsive - get font-size: em (em is 16p on windows)
+em - font de baza element parinte 
+rem  font de baza website 
+
+
+

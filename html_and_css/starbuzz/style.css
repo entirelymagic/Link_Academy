@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Roboto:wght@100;400;700&display=swap');
+html {
+    scroll-behavior: smooth;/* The scroll behavior. */ 
+}
+
+
 h1 {
     color: forestgreen;
     text-align: center;
+    font-weight: bolder;
+    font-size: 2.5em;
 }
 
 h2 {
@@ -10,13 +18,37 @@ h2 {
 
 h4 {
     text-align: center;
+    font-family: 'Hachi Maru Pop';
 }
 
 p {
     text-align: center;
     font-style: italic;
+
+}
+
+price{
+    text-align: center;
+    font-family: 'Hachi Maru Pop';
 }
 
 body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Roboto', 'Regular 400', sans-serif;
+}
+a {
+    text-decoration-line: unset;
+    text-decoration-style:inherit;
+    text-decoration-color: inherit;
+    text-decoration: inherit;
+}
+
+a:visited{
+    text-decoration-line: unset;
+    text-decoration-style:inherit;
+    text-decoration-color: inherit;
+    text-decoration: inherit;
+}
+
+a:hover {
+    background-color: yellowgreen;
 }
