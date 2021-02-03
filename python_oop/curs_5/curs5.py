@@ -7,6 +7,9 @@ incalpsularea
 
 Singleton:
 
+Decoratori:
+
+
 """
 
 

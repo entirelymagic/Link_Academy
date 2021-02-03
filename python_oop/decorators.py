@@ -33,6 +33,12 @@ def performance(func):
     return wrapper
 
 
+@performance
+def squared_by_itself_from_1_till_number_to_a_list(num):
+    l = []
+    for i in range(1, num):
+        l.append(i**i)
+    return l
 
 
-
+squared_by_itself_from_1_till_number_to_a_list(10000)
