@@ -41,4 +41,4 @@ def squared_by_itself_from_1_till_number_to_a_list(num):
     return l
 
 
-squared_by_itself_from_1_till_number_to_a_list(10000)
+squared_by_itself_from_1_till_number_to_a_list(7000)
