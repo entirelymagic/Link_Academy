@@ -1,0 +1,12 @@
+"""
+mostenirea
+
+polimorfismul
+
+incalpsularea
+
+Singleton:
+
+"""
+
+
