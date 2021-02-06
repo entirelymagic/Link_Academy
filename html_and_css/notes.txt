@@ -72,3 +72,39 @@ display: inline or block
 
 Escape Characters (HTML entities):
 - They begin with "&" 
+
+**********************
+Selectori CSS 
+
+id - Poate fi accesat cu #nume_id in CSS si in HTML href=#nume_id
+class - poate fi accessat dupa .nume_clasa in CSS
+
+https://flukeout.github.io/#
+
+*/ CSS reset 
+**********************
+BOX MODEL
+- culori - pot fi setate :
+  - 1 culoare pentru a avea uniform
+  - 2 culori pentru stanga-dreapta, sus-jos
+  - 4 culori - pentru fiecare latura in parte.
+**********************
+POZITIONARE
+ - aceleasi reguli de design pot fi aplicate ca si la culori
+ - 3 tipuri de pozitionare:
+    - relativ - fata de pozitia initiala
+    - absolute - fata de elementul parinte
+    - fixed - fata de fereastra randata
+    - sticky -ramane lipit de margini la schimbari de ecran
+- z-index =/ ordinea din html - prioritatea de suprapunere
+
+///////////////
+box-sizing:
+- border-box 
+- content-box
+**********************
+LISTE SI TABELE
+
+**********************
+FORMULARE
+

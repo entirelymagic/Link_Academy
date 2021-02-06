@@ -27,9 +27,10 @@ p {
 
 }
 
-price{
+.price{
     text-align: center;
     font-family: 'Hachi Maru Pop';
+    color: rgb(21, 126, 52)
 }
 
 body {
@@ -45,11 +46,35 @@ a {
 
 a:visited{
     text-decoration-line: unset;
-    text-decoration-style:forestgreen;
-    text-decoration-color: forestgreen;
+    text-decoration-style: inherit;
+    text-decoration-color: inherit;
     text-decoration: none;
 }
 
 a:hover {
     background-color: rgb(50, 195, 205);
+}
+
+#contact {
+    color: brown;
+}
+
+#menu {
+    background-color: rgb(38, 228, 218);
+    margin: 0em;
+    border-style: solid;
+    border-color:  #18c050 #c01818 #5318c0 rgb(81, 199, 101);
+
+    border-width: 0.3em;
+    padding: 0.1em;
+    margin: 0em auto;
+    width: 50%;
+    height: 2em;
+    text-align: center;
+    line-height:2em;
+    
+}
+
+.list_to_drink {
+    
 }
