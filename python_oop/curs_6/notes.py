@@ -8,7 +8,7 @@
 import os
 
 # get absolute path
-ab_path = os.path.abspath("./")
+ab_path = os.path.abspath("app/")
 print(ab_path)
 
 
@@ -16,7 +16,7 @@ print(ab_path)
 current_dir = os.getcwd()
 print(current_dir)
 
-link_path = r"D:/cursuri_python/python-ppf/Link_Academy/python_oop"
+link_path = r"/python_oop"
 
 
 #iterator prin folderul dat

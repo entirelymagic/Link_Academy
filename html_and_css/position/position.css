@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+BODY {
+    height: 200vh;
+}
+
+div {
+    height: 7em;
+    width: 7em;
+    background-color:rgb(194, 194, 194)
+}
+
+#relative_circle {
+    background-color: #19b6b6;
+    border-radius: 50%;
+    position: relative;
+    top: 1em;
+    left: 1em;
+}
+
+#absolute_square {
+    background-color: tomato;
+    border-radius: 10%;
+    position: absolute;
+    top: 2em;
+    right: 3em;
+}
+
+#fixed {
+    background-color: rgb(17, 141, 58);
+    border-radius: 10%;
+    position: fixed;
+    top: 5em;
+    right: 5em;
+    z-index: 1;
+}
+
+#sticky {
+    background-color: rgb(141, 17, 120);
+    border-radius: 10%;
+    position: sticky;
+    top: 0em;
+    right: 12vh;
+    z-index: 2;
+}
