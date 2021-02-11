@@ -3,6 +3,7 @@
     -
 """
 from abc import ABC, abstractstaticmethod
+from functools import reduce
 
 
 class Question:
@@ -41,6 +42,29 @@ class FileParser(Parser):
                 pass
 
 
+class UnknownArguments:
+    def __init__(self, *args):
+        self.name = args
+        self.last_name = args
+
+
+elvis = UnknownArguments('ELvis', 'Munteanu')
+
+print(f'{elvis.name} {elvis.last_name}')
 
 
 
+def print_dec(func):
+    def wrapper(*args, **kwargs):
+        print(func(*args, **kwargs))
+
+    return wrapper
+
+
+@print_dec
+def add_numbers2(*args, **kwargs):
+    val = [x for x in kwargs.values() if x is not None]
+    return reduce(lambda a, b: a + b, list(args).extend(list(val)))
+
+
+add_numbers2(1, 3)
