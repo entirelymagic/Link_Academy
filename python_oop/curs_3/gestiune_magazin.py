@@ -28,8 +28,7 @@ def total_valaore_retur():
 class Magazin:
     def __init__(self, name):
         self.name = name
-        self.vanzari = list()  # TODO: De adaugat datele de vanzare
-
+        self.vanzari = list()
     def vanzare(self, cumparator, product):
         now = datetime.now()
         vanzare = {
