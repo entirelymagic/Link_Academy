@@ -118,3 +118,15 @@ only work for table exterior.
 !!!!!!!!!!!!!
 
 border-collapse: collapse; pentru a unu bordurile cand se unesc
+
+
+DIferente 
+GET -
+
+# Overwrite the entire content 
+POST - Does not know the URL
+PUT - PUT knows the URL
+
+Patch - Partial update of the data.
+
+action
