@@ -1,0 +1,26 @@
+.menu-table {
+    font-family:sans-serif;
+    border-style: solid;
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+
+.mt-th {
+    background-color:rgb(30, 184, 223);
+    border-style: solid;
+    border-width: 1px;
+    text-align: left;
+    padding: 0.2em 0.4em;
+
+}
+
+td {
+    border-style: solid none;
+    border-width: 1px;
+    padding: 0.1em 0.4em
+}
+
+tr:nth-child(2n+1) {
+    background-color: rgb(187, 187, 187)
+}
+

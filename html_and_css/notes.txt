@@ -110,3 +110,11 @@ FORMULARE
 
 
 
+Tables***************************************
+
+!!!!!!!!!!!!!
+Margin does not work for rows. It is used padding 
+only work for table exterior.
+!!!!!!!!!!!!!
+
+border-collapse: collapse; pentru a unu bordurile cand se unesc
