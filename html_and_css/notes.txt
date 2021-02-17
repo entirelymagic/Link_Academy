@@ -14,6 +14,12 @@ caniuse.com # Functionalitati HTML ce pot fi folosite in diverse browsere.
 ### animatie CSS
 ### content delivery network - Optimizare Web
 ### hexinvaders.com - to learn hexadecimal color schemes
+### css-tricks.com/snipets/css/a-guide-to-flex-box
+
+
+
+
+
 
 Tipuri de Fonturi (Family):
 
