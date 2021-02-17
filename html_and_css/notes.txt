@@ -16,6 +16,10 @@ caniuse.com # Functionalitati HTML ce pot fi folosite in diverse browsere.
 ### hexinvaders.com - to learn hexadecimal color schemes
 ### css-tricks.com/snipets/css/a-guide-to-flex-box
 
+********flexbox
+### http://flexboxfroggy.com/
+### http://www.flexboxdefense.com/
+### unsplash.com
 
 
 
