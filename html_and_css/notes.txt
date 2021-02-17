@@ -139,4 +139,4 @@ PUT - PUT knows the URL
 
 Patch - Partial update of the data.
 
-action
+Media query ************ allow rules for changing screen size.(from mobile to desktop i.e.)
