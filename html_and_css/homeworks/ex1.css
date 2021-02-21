@@ -1,0 +1,63 @@
+body {
+    background-color: black;
+}
+
+.first_table {
+    font-family: sans-serif;
+    border-style: solid;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    margin: 1em auto;
+    background-color: white;
+}
+
+.first_table th {
+    border-style: solid none;
+    border-width: 1px;
+
+    background: #e76c33;
+    border-bottom: none;
+
+}
+
+.first_table th:nth-child(1) {
+    width: 300px;
+}
+
+.first_table th:nth-child(3) {
+    width: 300px;
+}
+
+.first_table th:nth-child(3) {
+    width: 400px;
+}
+
+.first_table th:nth-child(4) {
+    width: 200px;
+}
+
+.first_table tr:nth-child(2n+1) {
+    background-color: rgb(187, 187, 187)
+}
+
+.first_table td:nth-child(1) {
+    width: 200px;
+}
+
+.first_table td:nth-child(3) {
+    width: 200px;
+}
+
+.first_table td:nth-child(3) {
+    width: 400px;
+}
+
+.first_table td:nth-child(4) {
+    width: 200px;
+}
+
+
+.ft_div {
+    padding: 2em;
+    position: center;
+}

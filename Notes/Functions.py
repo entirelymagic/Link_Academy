@@ -23,9 +23,22 @@ def f(*args):
 def my_F(f):
     return f("Hello World")
 
+
 print(my_F(len))
+
 
 def g(**kwargs):
     """"""
     print(kwargs["firstname"])
 
+
+class This:
+    pass
+
+    def method_this(self):
+        pass
+
+
+x = This()
+
+x.method_this()
