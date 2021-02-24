@@ -1,0 +1,32 @@
+#object_a {
+    height: 10em;
+    width: 10em;
+    background: green;
+    position: relative;
+    top: 10em;
+    left: 10em;
+    border-radius: 10%;
+
+    animation: bob;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction:normal;
+
+}
+
+@keyframes bob {
+    25% {
+        transform: translateY(5y);
+    }
+    50%{
+        transform: translateX(15em)  rotate(390deg) scale(0.3) ;
+    }
+    66% {
+        transform: scale(0.5) rotate(360deg) translateX(120em);
+        background: red;
+    }
+    to {
+        transform: translateY(-5y);
+        background: blue;
+}
