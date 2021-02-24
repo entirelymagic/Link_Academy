@@ -1,0 +1,51 @@
+if (condition) {
+    // execute block code
+} else {
+    // execute this block code
+}
+
+
+
+// do something then check
+do {
+    try ();
+} while (fails);
+
+
+// check something then run if condition true
+while (fail) {
+    try ();
+}
+
+
+for(i = 0; i <10; i++) {
+    console.log ("i is " + i);
+}
+
+DOM - Document object model 
+JS interact with DOM object and cand perform CRUD operation  
+
+Get element from DOM:
+  var redplanet = document.getElementById('redplanet');
+
+//Evenimente !!!!!
+
+change = change the input (text)
+click - click the
+mouseover 
+mouseout
+keydown
+load
+// http://help.dottoro.com/
+
+karel = programming MIT robot for learning.
+
+//Client Side rendering 
+
+POSTMAN --- API SERVICE 
+
+AJAX - AXIOS --- 
+
+http://icndb.com/api/
+
+//bitcoin usd si euro/
