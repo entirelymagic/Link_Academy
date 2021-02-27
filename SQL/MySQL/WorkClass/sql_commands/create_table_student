@@ -1,0 +1,16 @@
+CREATE TABLE IF NOT EXISTS`facultate`.`student` (
+  `idstudent` INT NOT NULL,
+  `nume` VARCHAR(45) NULL,
+  `prenume` VARCHAR(45) NULL,
+  `grupa` TINYINT(1) NULL,
+  `email` VARCHAR(255) NULL,
+  `data_add` DATETIME NULL,
+  `status` ENUM('admins', 'respins', 'neevaluat') NULL DEFAULT 'neevaluat',
+  `studentcol` VARCHAR(45) NULL,
+  PRIMARY KEY (`idstudent`),
+  UNIQUE INDEX `idstudent_UNIQUE` (`idstudent` ASC) VISIBLE,
+  UNIQUE INDEX `nume_prenume_UNIQUE` (`nume` ASC, `prenume` ASC) VISIBLE)
+ENGINE = MyISAM
+DEFAULT CHARACTER SET = utf8;
+
+ALTER TABLE student ADD CHECK (grupa>=1 AND grupa<=4);
