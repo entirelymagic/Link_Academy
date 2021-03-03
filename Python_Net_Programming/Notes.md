@@ -99,3 +99,13 @@
 
 ## Socket 
  > http://beej.us/guide/bgnet/
+
+API-us BSD 
+1. Socket: create socket object
+2. Bind: Occupy port 
+3. Listen: wait for connection
+4. Accept:  Accept the entry connection.
+5. Connect:  Establish connection
+6. Send: Send the data 
+7. Recv: Get the data
+8. Close: close socket
