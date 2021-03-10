@@ -14,3 +14,8 @@
     
 
 Hack Attack type - Man in the middle. 
+
+##### CMD
+`-netstat -a `  
+`netstat -an` - n comes from number  
+`netstat --an | find "8005"` - check to see if the server is running and can be seen.
