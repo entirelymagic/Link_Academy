@@ -85,7 +85,7 @@
 > 3. ACK 
 
 
-### Protocol UDP:
+### Protocol UDP(User Datagram Protocol:
 
 - Do not require a persistent connection between the points.
   
