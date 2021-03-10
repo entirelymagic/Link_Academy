@@ -9,15 +9,15 @@
 
     animation: bob;
     animation-duration: 5s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: backwards;
     animation-iteration-count: infinite;
-    animation-direction:normal;
+    animation-direction: normal;
 
 }
 
 @keyframes bob {
     25% {
-        transform: translateY(5y);
+        transform: translateY(5em);
     }
     50%{
         transform: translateX(15em)  rotate(390deg) scale(0.3) ;
@@ -27,7 +27,9 @@
         background: red;
     }
     to {
-        transform: translateY(-5y);
+        transform: translateY(-25em);
         background: blue;
+    }
 }
-}
+
+
