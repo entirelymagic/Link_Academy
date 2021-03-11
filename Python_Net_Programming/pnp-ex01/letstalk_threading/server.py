@@ -68,13 +68,13 @@ users = {}
 
 ss = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 ss.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-ss.bind(("localhost", 8005))
+ss.bind(("0.0.0.0", 8005))
 ss.listen()
 print("Chat server running...")
 
 adv = Advertiser()
 adv.daemon = True
-adv.run()
+adv.start()
 
 while True:
     accept(ss)

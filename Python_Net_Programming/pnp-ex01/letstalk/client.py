@@ -13,7 +13,7 @@ class ChatListener(threading.Thread):
         self.username = username
 
     def run(self):
-        client.connect(("10.20.40.202", 8005))
+        client.connect(("localhost", 8004))
         client.send(self.username.encode("utf-8"))
         while True:
             res = client.recv(1024).decode("utf-8")
@@ -29,6 +29,7 @@ chat.start()
 while True:
     print("Enter message: ")
     msg = input()
+
     client.send(msg.encode("utf-8"))
     if msg == "/exit":
         print("Bye bye")

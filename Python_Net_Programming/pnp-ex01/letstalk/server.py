@@ -3,7 +3,7 @@ import selectors
 
 ss = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 ss.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-ss.bind(("localhost", 8005))
+ss.bind(("localhost", 8004))
 ss.listen()
 ss.setblocking(False)
 
