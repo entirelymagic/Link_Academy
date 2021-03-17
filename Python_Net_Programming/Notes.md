@@ -110,4 +110,36 @@ API-us BSD
 7. Recv: Get the data
 8. Close: close socket
 
+### HTTP Protocol
+
+Requests and responses in HTTP:
+> Request:
+> 
+> Method (`get`, `post` ...)
+> 
+> - hostname
+> 
+> - address 
+> 
+> - the resource
+>
+> Reply:
+> - the status ( `200` if okay, `404` if not)
+> - Headers
+> - Content
+
+> HTTP Messages :
+> 
+> - Headers
+> 
+> - Body 
+> 
+
+GET request does not contain a body!
+
+> MIME (Multipurpose Internet Mail Extensions):
+> 
+> http://iana.org media types 
+>
+
 

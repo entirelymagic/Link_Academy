@@ -55,7 +55,8 @@ while running:
     print("Available chat rooms: \n")
     rooms_available = {}
     counter = 0
-    for k, v in rooms.items():
+    keys = list(rooms_available.items())
+    for k, v in keys:
         rooms_available[counter] = k
         counter += 1
         print(f"Chat server {counter} on address: {k} available on port {v}")
