@@ -331,4 +331,7 @@ SELECT age, COUNT(age) FROM users GROUP BY age HAVING count(age) >=2;
 ```
 
 ### Transactions:
-```Only InnoDB accepts transaction.```
+
+Only InnoDB accepts transaction.
+If you start a transaction with other engine other than InnoDB all transaction will be autocommitted else it will \
+wait for the commit or rollback to complete the transactions.
