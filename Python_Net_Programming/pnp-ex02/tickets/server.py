@@ -48,6 +48,8 @@ class HttpHandler(threading.Thread):
                         code = "400 Bad Request"
                     else:
                         body = persistentFileHandler.checkout(bodyData)
+                        if not body:
+                            code = "400"
             else:
                 body = "Not a valid command"
                 code = "400 Bad Request"
