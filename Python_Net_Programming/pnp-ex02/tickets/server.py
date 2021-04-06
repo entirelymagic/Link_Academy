@@ -1,6 +1,6 @@
 import socket
 import threading
-import persistentFileHandler
+import persistentFileHandler_safe
 
 
 def accept(sock):
@@ -33,7 +33,7 @@ class HttpHandler(threading.Thread):
             code = "404 Not Found"
         else:
             if resource == "insert":
-                body = persistentFileHandler.insertticket()
+                body = persistentFileHandler_safe.insert_ticket()
             elif resource == "checkout":
                 if method.lower() != "post":
                     body = "You must use post method on this page"
@@ -47,7 +47,7 @@ class HttpHandler(threading.Thread):
                         body = "Not a valid ticket code"
                         code = "400 Bad Request"
                     else:
-                        body = persistentFileHandler.checkout(bodyData)
+                        body = persistentFileHandler_safe.checkout(bodyData)
                         if not body:
                             code = "400"
             else:

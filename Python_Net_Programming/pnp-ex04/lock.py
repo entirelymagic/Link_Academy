@@ -8,7 +8,7 @@ class MyThread(threading.Thread):
     def run(self):
         locker.acquire()
         for i in range(10):
-            print(i)
+            print(f"{i} from thread id {threading.get_ident()}")
             time.sleep(0.5)
         locker.release()
 

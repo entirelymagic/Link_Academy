@@ -26,7 +26,7 @@ def serialize(tickets):
     # locker.release()
 
 
-def insertticket():
+def insert_ticket():
     try:
         locker.acquire()
         tickets = deserialize()
@@ -43,6 +43,7 @@ def insertticket():
 
 
 def checkout(id):
+    locker.acquire()
     tickets = deserialize()
     ticketValid = False
     if id in tickets.keys():
@@ -50,4 +51,5 @@ def checkout(id):
             tickets[id]["used"] = True
             ticketValid = True
     serialize(tickets)
+    locker.release()
     return ticketValid

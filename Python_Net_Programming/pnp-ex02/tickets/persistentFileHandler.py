@@ -1,26 +1,29 @@
 import os
 import datetime
 import json
+import threading
 
-DATABASEFILE = "database.json"
+DATABASE_FILE = "database.json"
+locker = threading.Lock()
 
 
 def deserialize():
     tickets = {}
-    if os.path.exists(DATABASEFILE) and os.stat(DATABASEFILE).st_size > 0:
-        fin = open(DATABASEFILE)
+    if os.path.exists(DATABASE_FILE) and os.stat(DATABASE_FILE).st_size > 0:
+        fin = open(DATABASE_FILE)
         tickets = json.load(fin)
         fin.close()
     return tickets
 
 
 def serialize(tickets):
-    fout = open(DATABASEFILE, "w")
+    fout = open(DATABASE_FILE, "w")
     json.dump(tickets, fout)
     fout.close()
 
 
-def insertticket():
+def insert_ticket():
+    locker.acquire()
     tickets = deserialize()
     newTicketId = len(tickets.items()) + 1
     tickets[newTicketId] = {
@@ -28,6 +31,7 @@ def insertticket():
         "used": False
     }
     serialize(tickets)
+    locker.release()
     return newTicketId
 
 
