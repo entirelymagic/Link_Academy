@@ -2,7 +2,7 @@ import socket
 
 while True:
     # input("Press enter to get a ticket code:")
-    for i in range(1000):
+    for i in range(2000):
         client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         client.connect(("localhost", 8005))
         client.send("GET /insert HTTP/1.1\r\n\r\n".encode("utf-8"))
