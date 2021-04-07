@@ -1,6 +1,9 @@
 import socket
 import threading
+import base64
+
 import persistentFileHandler
+import authentication_service
 
 
 def accept(sock):
@@ -27,13 +30,36 @@ class HttpHandler(threading.Thread):
         resource = description[1].replace("/", "")
         method = description[0]
         code = "200 OK"
+        user = None
+        password = None
+        body = None
+        cache_control = "Cache-Control: no-store\r\n"
+        www_auth_header = ""
+
+        # we check the header in order to get the authentication header and decode the user and password.
+        for header in parts:
+            if header.split(":")[0] == "Authorization":
+                if " " in header and len(header.split(" ")) == 3:
+                    encoded_credentials = header.split(" ")[-1]
+                    decoded_credentials = base64.b64decode(encoded_credentials).decode("ascii")
+                    user = decoded_credentials.split(":")[0]
+                    password = decoded_credentials.split(":")[1]
 
         if not resource:
             body = "This is not a valid page"
             code = "404 Not Found"
         else:
             if resource == "insert":
-                body = persistentFileHandler.insertticket()
+                authenticated = False
+                # TODO authenticator
+                if user is not None and password is not None:
+                    authenticated = authentication_service.authenticate(user, password)
+                # now check if the user is authenticated
+                if authenticated:
+                    body = persistentFileHandler.insertticket()
+                else:
+                    code = "401 Unauthorized"
+                    www_auth_header = "WWW-Authenticate: Basic realm='myapp'\r\n"
             elif resource == "checkout":
                 if method.lower() != "post":
                     body = "You must use post method on this page"
@@ -57,7 +83,7 @@ class HttpHandler(threading.Thread):
             print(F"Returning {body}")
             protocol = "HTTP/1.1"
             self.sock.send(
-                f"{protocol} {code}\r\nContent-Type: text/html\r\nConnection: Close\r\n\r\n{body}".encode("utf-8"))
+                f"{protocol} {code}\r\n{cache_control}{www_auth_header}Content-Type: text/html\r\nConnection: Close\r\n\r\n{body}".encode("utf-8"))
             self.sock.close()
 
 

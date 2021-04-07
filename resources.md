@@ -2,6 +2,9 @@
 
 https://allitbooks.net/
 
+http://www.iana.org/
+
+
 
 ###Web Development :
 
@@ -22,5 +25,9 @@ https://medium.com/
 
 https://www.w3.org/TR/css-template-3/
 
+
+### Authentication
+
+https://www.iana.org/assignments/http-authschemes/http-authschemes.xhtml
 
 

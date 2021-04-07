@@ -142,5 +142,35 @@ GET request does not contain a body!
 > http://iana.org media types 
 >
 
+### Authentication - Basic Authentication
+
+    - WHen client request a protected resource the server will respond with\
+    a 401 status code and will communicate how to authenticate through\
+    the www-authenticate
+    - Client will send a new request that will include the credentials access\
+    (username and password) in header Authorization
+    - The server check the authorization of the user.
+    - If the request is denied do to invalid login will return 401 or 403 if the\
+    resource is not accessible.
+
+The answer send from client will be BASE64 encoded.
+
+### Websocket 
+
+    - Used for bidirectional communication, persistent.
+    - Based on TCP 
+    - It is using HTTP protocol to initiate the connection
+    - used by browser and server 
+    - used for bidirectinal communication between programs who do not run in browser.
+
+#### Websocket structure:
+
+    - F = if message is complete 
+    - 3 * R = reserved
+    - opcode = reading (1=text, 2=binary)  # content_type similar to
+    - M = check if the content is masked or not
+    - message lenght = 7 bytes for message length
+    - mask = If the mask exists this will ocuppy the next 32 bytes
+    - content = the message, of data length
 
 
