@@ -1,3 +1,4 @@
+
 -- Aplicatia 1
 -- Comenzi din linia de comanda a serverului MySQL.
 -- Logare/Conexiune :  default utilizatorul root nu are parola.
@@ -35,59 +36,47 @@ FLUSH PRIVILEGES;
 
 --   Comenzi din linia de comanda MySQL (dupa ce v-ati logat si ati ajuns la un prompt MySQL).
 -- Afiseaza o lista de baze de date
-show
-databases;
+show databases;
 
-use
-mysql;
-show
-tables;
+use mysql;
+show tables;
 select *
 from user;
 update user
 set password=PASSWORD('new_password')
 where User = 'root';
-flush
-privileges; --  Privilegiile intra in vigoare cu aceasta comanda fara a fi nevoie de restart
+flush privileges;
+--  Privilegiile intra in vigoare cu aceasta comanda fara a fi nevoie de restart
 
 -- Drepturile specificate aici merg doar pentru baza de date specificate in coloana db_column.
-show
-columns from db;
+show columns from db;
 
 -- Tabelele tables_priv si columns_priv  Ofera drepturi asupra unei tabele sau asupra unor coloane dintr-o tabela. 
-show
-columns from tables_priv;
+show columns from tables_priv;
 
 -- Arata toate procesele MySQL
-show full
-processlist;
+show full processlist;
 
 -- Termina un proces (este nevoie de introducerea comenzii anterioare pentru a obtine PID): 
-kill
-4; -- $pid;
-
+kill 4;
+-- $pid;
 
 
 -- Aplicatia 2
 
- -- Etapele de lucru din prezentare 
+-- Etapele de lucru din prezentare
 CREATE SCHEMA `bazadedate_test4` DEFAULT CHARACTER SET utf8;
-CREATE
-USER 'user_test4'@'localhost' IDENTIFIED BY 'test4';
+CREATE USER 'user_test4'@'localhost' IDENTIFIED BY 'test4';
 CREATE TABLE `bazadedate_test4`.`drepturi`
 (
-    `id`   INT NOT NULL AUTO_INCREMENT,
+    `id`   INT         NOT NULL AUTO_INCREMENT,
     `nume` VARCHAR(45) NULL,
     PRIMARY KEY (`id`)
 );
 
-GRANT
-SELECT
-ON bazadedate_test4.drepturi TO 'user_test4'@'localhost';
-FLUSH
-PRIVILEGES;
-use
-mysql;
+GRANT SELECT ON bazadedate_test4.drepturi TO 'user_test4'@'localhost';
+FLUSH PRIVILEGES;
+use mysql;
 select *
 from user;
 -- ne deconectam si ne conectam cu noul user creat
@@ -99,11 +88,9 @@ VALUES ('1', 'test');
 
 
 -- Putem vedea ce permisiuni are un anumit utilzator
-show
-grants for 'user_test4'@'localhost';
+show grants for 'user_test4'@'localhost';
 
-DROP
-USER 'user_test4'@'localhost';
+DROP USER 'user_test4'@'localhost';
 
 
 
