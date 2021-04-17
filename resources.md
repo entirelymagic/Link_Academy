@@ -5,6 +5,8 @@ https://allitbooks.net/
 
 ###Web Development :
 
+https://mailinator.com  create a fake email address to receive emails
+
 https://www.freecodecamp.org/
 
 https://developer.mozilla.org/
