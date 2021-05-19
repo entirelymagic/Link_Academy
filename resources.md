@@ -1,7 +1,7 @@
 ###General:
 
 https://allitbooks.net/
-
+https://redislabs.com/blog/redis-on-windows-10/
 
 ###Web Development :
 
