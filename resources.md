@@ -27,3 +27,7 @@ https://www.w3.org/TR/css-template-3/
 ### JavaScript
 
 https://javascript-minifier.com/   Minimize the name of the inputs.
+
+### Testing
+
+https://geteasyqa.com/
