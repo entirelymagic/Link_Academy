@@ -10,4 +10,4 @@ Include:
 4. SQL - MySQL
 5. Python NET Programming
 6. Web Application Building
-7. 
+7. Test Automation and Quality Assurance
