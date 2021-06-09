@@ -226,3 +226,4 @@ fabric.properties
 Notes/__pycache__/
 Notes/output.csv
 data.txt
+/test_automation_and_quality_assurance/selenium_app1/sensitive.py
