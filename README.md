@@ -11,3 +11,4 @@ Include:
 5. Python NET Programming
 6. Web Application Building
 7. Test Automation and Quality Assurance
+8. Data Access and Processing
