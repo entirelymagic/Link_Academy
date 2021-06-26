@@ -31,3 +31,7 @@ https://javascript-minifier.com/   Minimize the name of the inputs.
 ### Testing
 
 https://geteasyqa.com/
+
+
+### Django
+

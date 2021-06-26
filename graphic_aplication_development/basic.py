@@ -2,6 +2,7 @@ import tkinter as tk
 
 window = tk.Tk()  # create tkinter app
 window.title("Basic Tkinter App")  # app title
+
 window_height = 500
 window_width = 900
 
@@ -12,7 +13,6 @@ screen_height = window.winfo_screenheight()
 
 x_coordinate = int((screen_width / 2) - (window_width / 2))
 y_coordinate = int((screen_height / 2) - (window_height / 2))
-
 window.geometry("{}x{}+{}+{}".format(window_width, window_height, x_coordinate, y_coordinate))
 login_user_label = tk.Label(window, text="User Login").grid(row=0, column=2)
 # the label for user_name
