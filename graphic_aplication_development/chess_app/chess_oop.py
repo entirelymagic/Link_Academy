@@ -1,5 +1,5 @@
 from tkinter import *
-
+from time import time
 
 class Chess():
     def __init__(self, window) -> None:
@@ -7,12 +7,12 @@ class Chess():
         self.N = 4
         self.square_width = 100
         self.canvas_width = self.N * self.square_width
-
+        self.dashboard = Frame(window, width=self.canvas_width, height=self.canvas_width // 2)
+        self.dashboard.pack()
         self.board = Canvas(window, width=self.canvas_width, height=self.canvas_width, bg="black")
         self.board.pack()
         self.indent_text = self.square_width / 2
-        self.dashboard = Frame(window, width=self.canvas_width, height=self.canvas_width // 2)
-        self.dashboard.pack()
+
         self.next_sol_button = Button(self.dashboard, text="Next Solution", command=self.draw_next_solution)
         self.next_sol_button.grid(row=0, column=0)
 
@@ -21,17 +21,21 @@ class Chess():
 
         self.N_ui = StringVar()
         self.N_ui.set(self.N)
-        self.N_spinbox = Spinbox(self.dashboard, from_=4, to_=8, textvariable=self.N_ui, command=self.reset_board)
+        self.N_spinbox = Spinbox(self.dashboard, from_=4, to_=10, textvariable=self.N_ui, command=self.reset_board)
         self.N_spinbox.grid(row=1, column=0)
+        self.all_N_solutions = {}
+        self.time_label = Label(self.dashboard, text=f"Time to calculate ")
+        self.time_label.grid(row=1, column=1)
         # Algorithm
         self.stiva = []
         self.solutii = []
-        self.all_N_solutions = {}
+
         self.next_position = 1
         self.solution_index = 0
         self.draw_board()
 
     def config_init(self):
+
         self.stiva = []
         self.solutii = []
         self.next_position = 1
@@ -69,7 +73,7 @@ class Chess():
                                            (self.indent_text + (j * self.square_width)), text=u"👑", font=('Arial', 50),
                                            fill="red", tags="queen")
         self.solution_no_label.configure(text=f"Solution {self.solution_index + 1}/{len(self.solutii)}")
-
+        self.time_label.configure(text=f"time to calculate {self.all_N_solutions[str(self.N)]['time']}")
     def draw_next_solution(self):
         print("Should next solution")
         self.solution_index += 1
@@ -107,11 +111,12 @@ class Chess():
         if not str(self.N) in self.all_N_solutions:
             self.do_backtracking()
         else:
-            self.solutii = self.all_N_solutions[str(self.N)]
+            self.solutii = self.all_N_solutions[str(self.N)]["solution"]
 
     def do_backtracking(self):
         self.stiva.append(self.next_position)
         self.k = 0
+        start = time()
         while (self.nivel_stiva() >= 0):
             print("Intra in while")
             # verific daca trebuie adaugat
@@ -137,7 +142,11 @@ class Chess():
                         self.next_position = self.stiva[-1]
                         self.stiva.pop()
                     else:
-                        self.all_N_solutions[str(self.N)] = self.solutii
+                        end = time()
+                        time_taken = end-start
+                        self.all_N_solutions[str(self.N)] = {"solution": self.solutii,
+                                                             "time": str(time_taken)}
+
                         return
             else:
                 # verific daca este o solutie
